@@ -7,12 +7,82 @@
     <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline bg-red-500">
-        Hello world!
-      </h1>
-      <script src="../main.js"></script>
+    <h1 class="text-3xl font-bold bg-red-500">
+        Library application
+    </h1>
+
+    <div class="addForm">
+        <button class="add-btn" onclick="showForm()">Add book</button>
+        <dialog id="form-dialog">
+            <form action='' method='get' class='form'>
+                <legend>New Book </legend>
+            <div class='form-row'>
+                <div class="input-wrapper">
+                    <label for='first-name'>First Name</label>
+                    
+                    <input id='first-name' name='first-name' type='text' required />
+                    <span></span>
+                </div>
+                <div class="input-wrapper">
+                    <label for='last-name'>Last Name</label>
+                    <input id='last-name' name='last-name' type='text' required />
+                    <span></span>
+                </div>
+
+
+            </div>
+
+            <div class='form-row'>
+                <div class="input-wrapper">
+                    <label for='email'>Email</label>
+                    <input id='email'
+                           name='email'
+                           type='email'
+                           placeholder='joe@example.com' required />
+                           <span></span>
+                    
+                </div>
+                <div class="input-wrapper">
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required >
+                    <span></span> 
+                </div>
+
+
+
+            </div>
+
+
+            <div class='form-row'>
+   
+                <div class="input-wrapper">
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="password" minlength="8" required />
+                    <span></span>
+                </div>
+                <div class="input-wrapper">
+                    <label for="pass">Confirm password:</label>
+                    <input type="password" id="pass" name="password" minlength="8" required />
+                    <span></span>
+                </div>
+  
+            </div>
+
+
+                <div class='form-row last-row'>
+                    <button class="submit-btn">Create Account</button>
+                    <p>Already have an account?<a href="#"> Login</a></p>
+                  </div>
+       
+
+            </form>
+        </dialog>
+    </div>
+      
       <div class="library">
         
       </div>  
+
+      <script src="../main.js"></script>
 </body>
 </html>

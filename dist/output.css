@@ -548,7 +548,27 @@ video {
   font-weight: 700;
 }
 
-.underline {
-  text-decoration-line: underline;
+.library{
+  display: grid;
+  grid-template: 200px/ repeat(5, 150px);
+  background-color: lightblue;
+  grid-gap:10px;
 }
 
+.bookcard{
+  text-align: center;
+  padding:10px;
+  background-color: lightgreen;
+}
+
+.add-btn{
+  border:3px solid brown;
+  margin : 20px;
+  padding: 10px;
+  width: 200px;
+}
+
+.form{
+  border: 2px solid red;
+  padding:10px;
+}
