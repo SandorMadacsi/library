@@ -534,9 +534,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-red-500 {
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.border-cyan-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(22 78 99 / var(--tw-border-opacity));
+}
+
+.bg-cyan-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+  background-color: rgb(8 145 178 / var(--tw-bg-opacity));
+}
+
+.bg-cyan-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 51 68 / var(--tw-bg-opacity));
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-3xl {
@@ -548,27 +579,180 @@ video {
   font-weight: 700;
 }
 
+.text-cyan-50 {
+  --tw-text-opacity: 1;
+  color: rgb(236 254 255 / var(--tw-text-opacity));
+}
+
+.text-sky-200 {
+  --tw-text-opacity: 1;
+  color: rgb(186 230 253 / var(--tw-text-opacity));
+}
+
 .library{
   display: grid;
-  grid-template: 200px/ repeat(5, 150px);
-  background-color: lightblue;
+  grid-template: auto /  repeat(auto-fill, minmax(250px, 1fr));
   grid-gap:10px;
+  padding: 20px;
+  justify-content: space-evenly;
 }
 
 .bookcard{
-  text-align: center;
+  font-size: 17px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: #ecfeff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding:10px;
-  background-color: lightgreen;
+  background-color: #164e63;
+  border-radius: 10px;
+}
+
+.cardInfo{
+  display: grid;
+  grid-template: repeat(3,minmax(80px,1fr)) / auto;
 }
 
 .add-btn{
-  border:3px solid brown;
   margin : 20px;
   padding: 10px;
   width: 200px;
 }
 
-.form{
-  border: 2px solid red;
-  padding:10px;
+.form-header {
+  text-align: left;
+  border-radius: 3px;
+  margin: 40px 0;
+  padding: 50px;
+}
+
+.form-header h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  font-size:14px;
+  padding: 50px;
+  margin: 0 0 40px 0;
+}
+
+.form legend{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.close-btn{
+  position:absolute;
+  top:0;
+  right:0;
+  padding: 10px;
+  fill: black;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row input {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  height: 30px;
+  width: 300px;
+  padding: 7px;
+  font-size: 18px;
+}
+
+.form-row input:invalid{
+  background-color: rgb(243, 193, 193);
+  border:3px solid rgb(236, 96, 96);
+}
+
+input + span {
+  position: relative;
+}
+
+input:required + span:before    {
+  font-size: 0.7rem;
+  position: absolute;
+  content: "required";
+  color: white;
+  background-color: rgb(236, 96, 96);
+  padding: 5px 2px;
+  top: -80px;
+  left: 250px;
+}
+
+.form-row label {
+  margin-bottom: 5px;
+}
+
+.last-row{
+  font-size: 17px;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.last-row a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.submit-btn{
+  background-color: #098554;
+  border-radius: 5px;
+  border: none;
+  width: 300px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.submit-btn:hover{
+  background-color: #08a868;
+}
+
+.not-read{
+  background-color:#881337 ;
+}
+
+.read{
+  background-color:#22c55e ;
+}
+
+.btn{
+  padding:5px;
+  margin: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.buttons{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn.rmv-btn{
+  border: 3px solid #fff1f2;
+  color: #fff1f2;
+  background-color: #e11d48;
+  text-transform: uppercase;
 }
