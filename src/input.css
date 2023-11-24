@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 
-
-
+/* library /////////////////////////////////////////////////////////////*/
 .library{
     display: grid;
     grid-template: auto /  repeat(auto-fill, minmax(250px, 1fr));
@@ -14,6 +13,8 @@
 
 }
 
+
+/* Book  /////////////////////////////////////////////////////////////*/
 .bookcard{
     font-size: 17px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -45,6 +46,51 @@
   background-color: #164e63;
 }
 
+
+.not-read{
+  background-color:#262626 ;
+}
+
+.not-read:hover{
+  background-color: #404040;
+}
+
+.read{
+  background-color:#65a30d ;
+}
+
+.read:hover{
+background-color:#84cc16 ;
+}
+
+.btn{
+  padding:5px;
+  margin: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.buttons{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+
+
+}
+.btn.rmv-btn{
+
+  color: #fff1f2;
+  background-color: #e11d48;
+  text-transform: uppercase;
+}
+
+
+.rmv-btn:hover{
+  background-color: #be123c;
+}
+
+/* Dialog and Form /////////////////////////////////////////////////////////////*/
 dialog{
   border-radius: 10px;;
 }
@@ -54,68 +100,67 @@ dialog::backdrop {
 }
 
 .form-header {
-    text-align: left;
-    border-radius: 3px;
-    margin: 40px 0;
-    padding: 50px;
-  }
+  text-align: left;
+  border-radius: 3px;
+  margin: 40px 0;
+  padding: 50px;
+}
   
-  .form-header h1 {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
+.form-header h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
 
-  .form {
-    display: flex;
-    flex-direction: column;
-    font-size:14px;
-    padding: 50px;
-    margin: 0 0 40px 0;
-  }
-  .form legend{
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
+.form {
+  display: flex;
+  flex-direction: column;
+  font-size:14px;
+  padding: 50px;
+  margin: 0 0 40px 0;
+}
+.form legend{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
 
-  .form-row {
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 30px;
-  }
+.form-row {
+margin-bottom: 40px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+gap: 30px;
+}
 
-  .close-btn{
-    position:absolute; 
-    top:0; 
-    right:0;
-    padding: 10px;
-    fill: #082f49;
+.close-btn{
+  position:absolute; 
+  top:0; 
+  right:0;
+  padding: 10px;
+  fill: #082f49;
 
 }
 
-  .input-wrapper{
-    display: flex;
-    flex-direction: column;
-  }
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
   
-  .form-row input {
-    background-color: #FFFFFF;
-    border: 1px solid #D6D9DC;
-    border-radius: 3px;
-    height: 30px;
-    width: 300px;
-    padding: 7px;
-    font-size: 18px;
-  }
+.form-row input {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  height: 30px;
+  width: 300px;
+  padding: 7px;
+  font-size: 18px;
+}
 
+.form-row input:invalid{
+  background-color: #fda4af;
+  border:2px solid #881337;
+}
 
-  .form-row input:invalid{
-    background-color: #fda4af;
-    border:2px solid #881337;
-  }
-
- input + span {
+input + span {
   position: relative;
 }
 
@@ -129,23 +174,12 @@ input:required + span:before    {
   left: 250px;
 }
 
-  .form-row label {
+.form-row label {
     margin-bottom: 5px;
   }
 
-.last-row{
-  font-size: 17px;
-    flex-direction: column;
-    gap: 5px;
-    font-weight: bold;
-}
-.last-row a{
-    
-    text-decoration: none;
-    font-weight: bold;
-}
 
-  .submit-btn{
+.submit-btn{
     background-color: #083344;
     color: #f0f9ff;
     border-radius: 5px;
@@ -159,39 +193,3 @@ input:required + span:before    {
   .submit-btn:hover{
     background-color: #075985;
   }
-
-    .not-read{
-      background-color:#881337 ;
-    }
-
-    .read{
-      background-color:#22c55e ;
-    }
-
-    .btn{
-      padding:5px;
-      margin: 10px;
-      border-radius: 10px;
-      font-weight: bold;
-      text-transform: capitalize;
-    }
-
-    .buttons{
-      margin-top: 10px;
-      display: flex;
-      flex-direction: column;
-
-
-    }
-   .btn.rmv-btn{
-      border: 3px solid #fff1f2;
-      color: #fff1f2;
-      background-color: #e11d48;
-      text-transform: uppercase;
-    }
-
-
-    .rmv-btn:hover{
-      background-color: #be123c;
-      border:3px solid #be123c;
-    }
