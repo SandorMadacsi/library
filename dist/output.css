@@ -621,6 +621,18 @@ video {
   width: 200px;
 }
 
+.add-btn:hover{
+  background-color: #164e63;
+}
+
+dialog{
+  border-radius: 10px;
+}
+
+dialog::backdrop {
+  background: rgba(8,47,73,0.9);
+}
+
 .form-header {
   text-align: left;
   border-radius: 3px;
@@ -636,7 +648,6 @@ video {
 .form {
   display: flex;
   flex-direction: column;
-  border-radius: 3px;
   font-size:14px;
   padding: 50px;
   margin: 0 0 40px 0;
@@ -660,7 +671,7 @@ video {
   top:0;
   right:0;
   padding: 10px;
-  fill: black;
+  fill: #082f49;
 }
 
 .input-wrapper{
@@ -679,8 +690,8 @@ video {
 }
 
 .form-row input:invalid{
-  background-color: rgb(243, 193, 193);
-  border:3px solid rgb(236, 96, 96);
+  background-color: #fda4af;
+  border:2px solid #881337;
 }
 
 input + span {
@@ -688,11 +699,10 @@ input + span {
 }
 
 input:required + span:before    {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   position: absolute;
   content: "required";
-  color: white;
-  background-color: rgb(236, 96, 96);
+  color: #881337;
   padding: 5px 2px;
   top: -80px;
   left: 250px;
@@ -715,7 +725,8 @@ input:required + span:before    {
 }
 
 .submit-btn{
-  background-color: #098554;
+  background-color: #083344;
+  color: #f0f9ff;
   border-radius: 5px;
   border: none;
   width: 300px;
@@ -725,7 +736,7 @@ input:required + span:before    {
 }
 
 .submit-btn:hover{
-  background-color: #08a868;
+  background-color: #075985;
 }
 
 .not-read{
@@ -755,4 +766,9 @@ input:required + span:before    {
   color: #fff1f2;
   background-color: #e11d48;
   text-transform: uppercase;
+}
+
+.rmv-btn:hover{
+  background-color: #be123c;
+  border:3px solid #be123c;
 }
