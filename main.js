@@ -60,8 +60,7 @@ function removeBook(a){
 //looping through array and creating book card with content
 function showBooks(library){
     libraryDiv.innerHTML = "";
-    for(i = 0; i < library.length; i++){
-        let index = i;
+    for(let i = 0; i < library.length; i++){
 
         //card
         let bookCard = document.createElement('div');
@@ -116,7 +115,7 @@ function showBooks(library){
         rmvButton.classList.add("btn");
         rmvButton.innerHTML = "remove";
         rmvButton.addEventListener('click', function(){
-            removeBook(index);
+            removeBook(i);
         });
 
         //adding buttons to div
