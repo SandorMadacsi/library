@@ -118,6 +118,7 @@ dialog::backdrop {
   padding: 50px;
   margin: 0 0 40px 0;
 }
+
 .form legend{
   font-size: 30px;
   margin-bottom: 20px;
@@ -137,7 +138,6 @@ gap: 30px;
   right:0;
   padding: 10px;
   fill: #082f49;
-
 }
 
 .input-wrapper{
